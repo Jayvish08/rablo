@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(243, 197, 243);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+.btns{
+    display: flex;
+    width: 50%;
+    padding: 1rem;
+}
+.btn{
+    margin-right: 2rem;
+}
+
+.ml{
+    margin-left: 3rem;
+}
+
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
