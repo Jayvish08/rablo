@@ -20,7 +20,7 @@ const mongo_url = "mongodb://127.0.0.1:27017/rablo";
 const dbUrl = process.env.ATLASDB_URL;
 async function main() {
     try {
-        await mongoose.connect(mongo_url);
+        await mongoose.connect(dbUrl);
         console.log("MongoDB Connection Established");
     } catch (err) {
         console.error("Database Connection Failed:", err);
@@ -29,7 +29,7 @@ async function main() {
 main();
 
 const store = MongoStore.create({
-    mongoUrl: mongo_url,
+    mongoUrl: dbUrl,
     crypto: {
         secret: process.env.SECRET
     },
